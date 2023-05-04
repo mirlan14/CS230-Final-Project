@@ -51,3 +51,10 @@ for index, row in df.iterrows():
 
 st.write("Map showing the location of each airport")
 st.write(m)
+
+
+hungry = ['not very','somewhat', 'kind of', 'very', 'super']
+st.write("How Hungry are You? ")
+x = st.slider('Hungry Index',0.0,4.0,1.0)
+st.write('You are ', hungry[round(x)], 'hungry!')
+st.write(x)
