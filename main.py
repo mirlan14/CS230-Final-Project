@@ -51,6 +51,7 @@ m = folium.Map(location=[filtered_df["coordinates"].str.split(",", expand=True).
 for index, row in df.iterrows():
      lat, lon = row["coordinates"].split(", ")
      folium.Marker([float(lon), float(lat)], popup=row["name"]).add_to(m)
+     break 
 
 st.write("Map showing the location of each airport")
 st.write(m)
