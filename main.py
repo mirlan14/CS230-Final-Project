@@ -46,11 +46,11 @@ st.plotly_chart(fig3)
 
 
 # Create a scatter plot showing the location of each airport on a map
-# m = folium.Map(location=[filtered_df["coordinates"].str.split(",", expand=True).iloc[0, 1], filtered_df["coordinates"].str.split(",", expand=True).iloc[0, 0]], zoom_start=3)
+m = folium.Map(location=[filtered_df["coordinates"].str.split(",", expand=True).iloc[0, 1], filtered_df["coordinates"].str.split(",", expand=True).iloc[0, 0]], zoom_start=3)
 
-# for index, row in df.iterrows():
-#     lat, lon = row["coordinates"].split(", ")
-#     folium.Marker([float(lon), float(lat)], popup=row["name"]).add_to(m)
+for index, row in df.iterrows():
+     lat, lon = row["coordinates"].split(", ")
+     folium.Marker([float(lon), float(lat)], popup=row["name"]).add_to(m)
 
-# st.write("Map showing the location of each airport")
-# st.write(m)
+st.write("Map showing the location of each airport")
+st.write(m)
