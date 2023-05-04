@@ -14,9 +14,10 @@ import folium
 
 # Load the CSV file into a DataFrame
 df = pd.read_csv("airports.csv")
+first_fifty = filtered_df = df.head(50)
 
 # Set up the Streamlit UI
-st.title("Airports Data Visualization")
+st.title("Airports Data Visualization Project")
 st.sidebar.title("Filters")
 
 # Add interactive widgets for filtering
