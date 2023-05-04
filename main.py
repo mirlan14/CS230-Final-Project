@@ -1,9 +1,9 @@
 """Name: 
 Tnaliyev Mirlan
-CS230: Section XXX
-Data: Which data set you used
-Description:
-This program ... (a few sentences about your program and the queries and charts)
+CS230 Final Project
+Data: Airports Around the World 
+Description: 
+    This program improts the dataset "Airports" and create interactive  dashboards on Streamlit platform, thus, allowing to display insughts from the massive data. It utilizes filtering through data, includes widgets, and generally have vizualisations using Python libraries 
 """
 
 import streamlit as st
